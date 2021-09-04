@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background: rgb(128,122,221);
+background: linear-gradient(90deg, rgba(128,122,221,1) 0%, rgba(34,100,159,1) 53%, rgba(99,255,0,1) 100%);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start-game a{
+    text-decoration:none ;
+    color:black;
+    padding:5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.round{
+    font-weight:bold;
 }
-
-.App-link {
-  color: #61dafb;
+.game-round{
+    font-weight:bold;
+    background-color: chartreuse;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+    width:600px;
+    display:flex;
+    justify-content: space-between;
+}
+.game-explanation{
+    margin:2rem 0;
+    background-color: chartreuse;
+    padding:5px;
+    font-weight: 700;
+}
+.player-1,.player-2,.player-3,.player-4{
+    font-size:24px;
+    font-weight: 400;
+}
+.score-board{
+    background-color: azure;
+    margin:2rem 0;
+    padding-left: 1rem;
+}
+.submit{
+    margin-top:1rem;
+}
+.scores{
+    margin-left:2rem;
 }
